@@ -3,7 +3,7 @@
 
 def primes(number_of_primes):
     list = []
-    if x<=0:
+    if number_of_primes<=0:
         raise ValueError("should be positive")
     num = 2
     while len(list) < number_of_primes:
