@@ -3,4 +3,16 @@
 
 def primes(number_of_primes):
     list = []
-    return list
+    try:
+        num = 2
+        while len(list) < number_of_primes:
+            flag = True
+            for i in range(2, num):
+                if(num % i == 0):
+                    flag = False
+            if( flag):
+                list.append(num)
+            num += 1
+        return list
+    except ValueError:
+        print(f"yikes dude")
